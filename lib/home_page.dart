@@ -7,6 +7,7 @@ import 'services/music_service.dart';
 import 'services/playlist_provider.dart';
 import 'widgets/music_player.dart'; // Import the MusicPlayer widget
 import 'alarm_page.dart'; // Import the AlarmPage
+import 'profile_page.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -56,7 +57,7 @@ class _HomePageState extends State<HomePage> {
           IconButton(
             icon: Icon(Icons.person),
             onPressed: () {
-              // Handle profile icon tap
+              Navigator.pushNamed(context, '/profile');
             },
           ),
         ],
