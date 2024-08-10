@@ -11,6 +11,10 @@ class MusicPlayer extends StatefulWidget {
 
   @override
   _MusicPlayerState createState() => _MusicPlayerState();
+
+  static void stopPlayback() {}
+
+  static void playMusic(String filePath) {}
 }
 
 class _MusicPlayerState extends State<MusicPlayer> {
